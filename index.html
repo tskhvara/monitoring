@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Monitoring</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar scroll</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                  <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Link
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Link</a>
+                    </li>
+                  </ul>
+                  <div id="clock"></div>
+
+              </nav>
+              <div id="clock"></div>
+
+            <div class="header-info">
+            <span class="header-mentors">Active Mentors: <span id="available-mentors">8</span>/<span id="total-mentors">15</span></span>
+            <span class="header-mentors">A Building Mentors: <span id="available-mentors_A">8</span>/<span id="total-mentors_A">15</span></span>
+            <span class="header-mentors">C Building Mentors: <span id="available-mentors_C">1</span>/<span id="total-mentors_C">2</span></span>
+            <span class="header-mentors">D Building Mentors: <span id="available-mentors_D">1</span>/<span id="total-mentors_D">2</span></span>
+            <span class="header-mentors">E Building Mentors: <span id="available-mentors_E">1</span>/<span id="total-mentors_E">3</span></span>
+            <span class="header-mentors">RUS/ENG Mentors: <span id="available-mentors_RUS">2</span>/<span id="total-mentors_RUS">2</span></span>
+            <span class="header-mentors">TUR/ENG Mentors: <span id="available-mentors_TUR">1</span>/<span id="total-mentors_TUR">2</span></span>
+            <span class="header-sos">ACTIVE SOS COUNT: 30</span>
+            </div>
+        </header>
+        <section>
+            <table border="1" style="width: 100%;" class="table1">
+                <thead>
+                
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                    <th>First Break</th>
+                    <th>Second Break</th>
+                    <th>role</th>
+                    <th>Languages</th>
+                    <th>Games</th>
+                    <th>Duty Time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>29894</td>
+                    <td>Gvido Samsonadze</td>
+                    <td><input class="clock-input-clear" type="time" value="00:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><select class="clear-option" name="role-select1" id="role-select1">
+                        <option value="mentor" style="color: red; background-color:red" selected> <span style="color: red;">SELECT ROLE</span></option>
+                        <option value="A-mentor">A Building Mentor</option>
+                        <option value="D-mentor">D Building Mentor</option>
+                        <option value="C-mentor">C Building Mentor</option>
+                        <option value="E-mentor">E Building Mentor</option>
+                        <option value="rus-mentor">Rus/Eng Mentor</option>
+                        <option value="tur-mentor">Tur/Eng Mentor</option>
+                    </select></td>
+                    <td><span class="box-span">ENG</span> <span class="box-span">TUR</span> <span class="box-span">RUS</span> <span class="box-span">GEO</span></td>
+                    <td>17</td>
+                    <td><input class="clock-input-clear" type="time" value="00:00"></td>
+                    <td><button class="btn btn-outline-danger">Start</button> </td>
+                  </tr>
+                  <tr>
+                    <td>29894</td>
+                    <td>Gvido Samsonadze</td>
+                    <td><input class="clock-input-clear" type="time" value="00:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><select class="clear-option" name="role-select1" id="role-select2">
+                        <option value="mentor" style="color: red; background-color:red" selected> <span style="color: red;">SELECT ROLE</span></option>
+                        <option value="A-mentor">A Building Mentor</option>
+                        <option value="D-mentor">D Building Mentor</option>
+                        <option value="C-mentor">C Building Mentor</option>
+                        <option value="E-mentor">E Building Mentor</option>
+                        <option value="rus-mentor">Rus/Eng Mentor</option>
+                        <option value="tur-mentor">Tur/Eng Mentor</option>
+                    </select></td>
+                    <td><span class="box-span">ENG</span> <span class="box-span">TUR</span> <span class="box-span">RUS</span> <span class="box-span">GEO</span></td>
+                    <td>17</td>
+                    <td><input class="clock-input-clear" type="time" value="00:00"></td>
+                    <td><button class="btn btn-outline-danger">Start</button> </td>
+                  </tr>
+                  <tr>
+                    <td>29894</td>
+                    <td>Gvido Samsonadze</td>
+                    <td><input class="clock-input-clear" type="time" value="00:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><select class="clear-option" name="role-select1" id="role-select3">
+                        <option value="mentor" style="color: red; background-color:red" selected> <span style="color: red;">SELECT ROLE</span></option>
+                        <option value="A-mentor">A Building Mentor</option>
+                        <option value="D-mentor">D Building Mentor</option>
+                        <option value="C-mentor">C Building Mentor</option>
+                        <option value="E-mentor">E Building Mentor</option>
+                        <option value="rus-mentor">Rus/Eng Mentor</option>
+                        <option value="tur-mentor">Tur/Eng Mentor</option>
+                    </select></td>
+                    <td><span class="box-span">ENG</span> <span class="box-span">TUR</span> <span class="box-span">RUS</span> <span class="box-span">GEO</span></td>
+                    <td>17</td>
+                    <td><input class="clock-input-clear" type="time" value="00:00"></td>
+                    <td><button class="btn btn-outline-danger">Start</button> </td>
+                  </tr>
+                  <tr class="table-col3">
+                    <td>29894</td>
+                    <td>Gvido Samsonadze</td>
+                    <td><input class="clock-input-clear" type="time" value="00:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><input class="clock-input-clear" type="time" value="08:00"></td>
+                    <td><select class="clear-option" name="role-select1" id="role-select4">
+                        <option value="mentor" style="color: red; background-color:red" selected> <span style="color: red;">SELECT ROLE</span></option>
+                        <option value="A-mentor">A Building Mentor</option>
+                        <option value="D-mentor">D Building Mentor</option>
+                        <option value="C-mentor">C Building Mentor</option>
+                        <option value="E-mentor">E Building Mentor</option>
+                        <option value="rus-mentor">Rus/Eng Mentor</option>
+                        <option value="tur-mentor">Tur/Eng Mentor</option>
+                    </select></td>
+                    <td><span class="box-span">ENG</span> <span class="box-span">TUR</span> <span class="box-span">RUS</span> <span class="box-span">GEO</span></td>
+                    <td>17</td>
+                    <td><input class="clock-input-clear" type="time" value="00:00"></td>
+                    <td><button class="btn btn-outline-danger">Start</button> </td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+        <section class="active">
+            <table border="1" style="width: 100%;">
+                <thead>
+                
+                  <tr>
+                    <th>Signal</th>
+                    <th>Table</th>
+                    <th>Building</th>
+                    <th>Pit</th>
+                    <th>Language</th>
+                    <th>Game</th>
+                    <th>cover Time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Row 1 Data 1</td>
+                    <td>Row 1 Data 2</td>
+                    <td>Row 1 Data 3</td>
+                    <td>Row 1 Data 4</td>
+                    <td>Row 1 Data 5</td>
+                    <td>Row 1 Data 6</td>
+                    <td>Row 1 Data 7</td>
+                  </tr>
+                  <tr>
+                    <td>Row 2 Data 1</td>
+                    <td>Row 2 Data 2</td>
+                    <td>Row 2 Data 3</td>
+                    <td>Row 2 Data 4</td>
+                    <td>Row 2 Data 5</td>
+                    <td>Row 2 Data 6</td>
+                    <td>Row 2 Data 7</td>
+                  </tr>
+                  <tr>
+                    <td>Row 3 Data 1</td>
+                    <td>Row 3 Data 2</td>
+                    <td>Row 3 Data 3</td>
+                    <td>Row 3 Data 4</td>
+                    <td>Row 3 Data 5</td>
+                    <td>Row 3 Data 6</td>
+                    <td>Row 3 Data 7</td>
+                  </tr>
+                  <tr>
+                    <td>Row 4 Data 1</td>
+                    <td>Row 4 Data 2</td>
+                    <td>Row 4 Data 3</td>
+                    <td>Row 4 Data 4</td>
+                    <td>Row 4 Data 5</td>
+                    <td>Row 4 Data 6</td>
+                    <td>Row 4 Data 7</td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+        <section class="active-mentors container-fluid">
+            <div class="active-mentors_row active-mentors_row0">
+                <div class="active-mentors_col active-mentors_col1">
+                    Name 
+                </div>
+                <div class="active-mentors_col active-mentors_col2">
+                    Role
+                </div>
+                <div class="active-mentors_col active-mentors_col3">
+                    Last Table
+                </div>
+                <div class="active-mentors_col active-mentors_col4">
+                    Tables covered
+                </div>
+                <div class="active-mentors_col active-mentors_col5">
+                    on sos time
+                </div>
+                <div class="active-mentors_col active-mentors_col6">
+                    Languages
+                </div>
+                <div class="active-mentors_col active-mentors_col7">
+                    Game Knowledges
+                </div>
+                <div class="active-mentors_col active-mentors_col8">
+                    Status
+                </div>
+                <div class="active-mentors_col active-mentors_col9">
+                    Action
+                </div>
+            </div>
+            <div class="active-mentors_row active-mentors_row1">
+                <div class="active-mentors_col active-mentors_col1">
+                    Giorgi Tskhvaradze 
+                </div>
+                <div class="active-mentors_col active-mentors_col2">
+                    C Building Mentor
+                </div>
+                <div class="active-mentors_col active-mentors_col3">
+                    <td><input class="clock-input-clear" type="time" value="01:15"></td>
+                </div>
+                <div class="active-mentors_col active-mentors_col4">
+                    5
+                </div>
+                <div class="active-mentors_col active-mentors_col5">
+                    <td><input class="clock-input-clear" type="time" value="02:44"></td>
+                </div>
+                <div class="active-mentors_col active-mentors_col6">
+                  <span class="active-mentors-language" id="active-mentors-language_ENG">ENG</span>
+                  <span class="active-mentors-language" id="active-mentors-language_TUR">TUR</span> 
+                  <span class="active-mentors-language" id="active-mentors-language_RUS">RUS</span> 
+                  <span class="active-mentors-language" id="active-mentors-language_GEO">GEO</span> 
+                </div>
+                <div class="active-mentors_col active-mentors_col7">
+                    19
+                </div>
+                <div class="active-mentors_col active-mentors_col8">
+                    available
+                </div>
+                <div class="active-mentors_col active-mentors_col9">
+                    <button class="btn btn-outline-danger"></button>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
